@@ -47,7 +47,7 @@ public class Triangle : IShape
     /// <returns>True if the triangle is a right triangle, false otherwise.</returns>
     public bool IsRightTriangle()
     {
-        double[] sides = new double[] { SideA, SideB, SideC };
+        double[] sides = { SideA, SideB, SideC };
         Array.Sort(sides);
         return Math.Abs(sides[2] * sides[2] - (sides[0] * sides[0] + sides[1] * sides[1])) < 0.0001;
     }
